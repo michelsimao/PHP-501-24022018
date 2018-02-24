@@ -9,6 +9,10 @@ class Conta
 
 
 	// Metodos
+	public function __construct(){
+		
+	}
+
 	public function sacar(int $saque){
 		$this->saldo -= $saque; 
 		echo("Estou sacando $saque <br>");
