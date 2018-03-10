@@ -15,7 +15,10 @@ class Conta
 
 class ContaCorrente extends Conta
 {
-	private $chequeEspecial = true;
+	private $chequeEspecial = false;
+
+	public function getChequeEspecial(){ return $this->chequeEspecial; }
+	public function setChequeEspecial($chequeEspecial){ return $this->chequeEspecial = $chequeEspecial; }
 
 	public function sacar($valor){
 		if($this->saldo >= $valor){
